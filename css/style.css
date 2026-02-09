@@ -1,0 +1,173 @@
+/* COLOUR PALETTE
+    Primary Blue #0C4A6E;
+    Off White   #FAFAFA;
+    Black   #000000;
+    Grey   F4F4F5;
+    font-family: arial, sans-serif;
+    h2: 2rem; 60 px , arial bold;
+   h3: 1.5rem; 48px, arial bold; p: 1rem; 16px, arial regular;
+   h1: 60 px , arial bold; 26 px;
+   h2 (servive plans), 60px, arial bold;
+   h3,h4 (under service plans) : 48px, arial bold;
+   features list: 34px, arial bold;
+   li: 16px, arial regular; black #000000::
+   p: 24 px , arial bold Primary Blue #0C4A6E;
+   footer: Off White   #FAFAFA; ariel mixed ,16px:
+*/
+:root{
+  --blue:#0C4A6E;
+  --offwhite:#FAFAFA;
+  --black:#000000;
+  --grey:#F4F4F5;
+  --card:#D9D9D9;          
+  --max-width:1528px;
+}
+
+
+
+body{
+  font-family: Arial, sans-serif;
+  background: var(--offwhite);
+  color: var(--black);
+  margin: 0;
+}
+
+.container{
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Header*/
+.header{
+  background: var(--blue);
+  color: var(--offwhite);
+  padding: 18px 0;
+}
+
+.header h1{
+  margin: 0;
+  font-size: 16px;
+  font-weight:bold;
+}
+
+/* Main spacing */
+.main{
+  padding: 28px 0 10px;
+}
+
+/* section titles */
+.team-section h2,
+.service-section h2{
+  margin: 18px 0 18px;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+/* Team Grid */
+.team-grid{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+  margin-bottom: 70px;
+}
+
+/* two cards per row */
+.team-card{
+  flex: 0 0 calc(50% - 14px); 
+  background: var(--card);
+  padding: 26px;
+  display: flex;
+  gap: 22px;
+  align-items: flex-start;
+}
+
+.team-card img{
+  width: 120px;
+  height: 120px;
+  flex: 0 0 120px; 
+}
+
+.team-text h3{
+  margin: 6px 0 10px;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.team-text p{
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.45;
+  max-width: 320px;
+}
+
+/* Service Plan */
+.service-grid{
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 28px;
+  margin-top: 18px;
+  margin-bottom: 70px;
+  justify-content: space-between;
+}
+
+/* 3 cards per row */
+.service-card{
+  flex: 1; 
+  background: var(--card);
+  padding: 30px 26px;
+  text-align: center;
+
+}
+
+.service-card h3{
+  margin: 0 0 18px;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.service-card h4{
+  margin: 0 0 16px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.service-card ul{ 
+  padding: 0;
+  margin: 0 auto 18px;
+  text-align: left;
+  max-width: 260px;
+}
+
+.service-card li{
+  margin: 10px 0;
+  font-size: 16px;
+  line-height: 1.35;
+}
+
+.price{
+  margin: 10px 0 0;
+  font-weight: bold;
+  font-size: 16px;
+  color: var(--blue);
+  text-align: center;
+}
+
+/* Footer */
+.footer{
+  background: var(--blue);
+  color: var(--offwhite);
+  padding: 16px 0;
+}
+
+.footer p{
+  margin: 0 0 6px;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.footer cite{
+  display: block;
+  font-size: 16px;
+  font-style: italic;
+}
